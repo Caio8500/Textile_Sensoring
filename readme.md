@@ -1,0 +1,15 @@
+# Smart Textile
+
+For several years, ENSEIRB-MATMECA and the company Thingva, an enterprise active in the pharmaceutical field, academic research, and 3D printing, have been closely collaborating to develop a system for monitoring various physiological parameters. This system, which is based on the use of multiple measurement channels, each equipped with a resistive filament, will be the focus of our project. These filaments can be stretched or elongated depending on the deformations applied to them.  
+
+Thingva aims to integrate these sensors into the fabric of a jacket as part of a clinical trial. The primary goal is to reconstruct the deformations of the rib cage of patients wearing the jacket and use the obtained results for medical monitoring, diagnosis, or research purposes.  
+
+The implementation of such a system offers multiple advantages. Firstly, these sensors will enable continuous and precise monitoring of physiological parameters related to respiratory health and body movements, thus allowing for early diagnosis and clinical monitoring of certain respiratory abnormalities. Additionally, this technology represents a significant advancement in the biomedical field, opening promising prospects for smart textiles and accessories integrated into the healthcare sector, contributing to improving patients' daily lives.  
+
+So far, the electronic design has led to the development of a functional prototype of a single-channel acquisition front-end. The concept is based on injecting a programmable current and measuring differential voltage. Subsequently, the circuit was multiplexed, enabling the simultaneous measurement of multiple channels with a single acquisition circuit. In the long term, the ultimate goal is to be able to process several hundred channels simultaneously.  
+
+For each resistive filament to be measured, two distinct switches are required: one for excitation—applying a current through the filament—and the other to establish the connection with the instrumentation amplifier to perform the measurement. Alongside these analog components, an Arduino Uno microcontroller ensures communication between the various electronic components and measurement synchronization, while a specially designed Python program handles data recording and visualization. These two elements complement each other, facilitating the use of the device.  
+
+The objective of this project is to complete the development of this acquisition system to support the implementation of the aforementioned clinical trial and to evaluate whether the current solution can be adapted and scaled to meet larger needs.  
+
+This project will allow us to explore various functionalities of analog and digital electronics in instrumentation, particularly embedded applications in the healthcare and environmental sectors. Our focus will primarily be on the digital aspect of the design.  
